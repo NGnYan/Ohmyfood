@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.538);
+}
+.header .header-logo {
+  width: 300px;
+  height: auto;
+}
+
+.loca-section {
+  padding: 20px 0;
+  background-color: rgba(232, 232, 232, 0.763);
+  gap: 20px;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.475);
+}
+
+/*# sourceMappingURL=style.css.map */
