@@ -5,18 +5,18 @@
   box-sizing: border-box;
 }
 
-.title{
+.title {
   font-weight: bold;
 }
 
-.subtitle{
+.subtitle {
   font-weight: lighter;
 }
 
 // ***** Colors *****
-$purple:#9356DC;
-$pink:#FF79DA;
-$turquoise:#99E2D0;
+$purple: #9356dc;
+$pink: #ff79da;
+$turquoise: #99e2d0;
 
 // ***** Position *****
 .align-center {
@@ -25,7 +25,7 @@ $turquoise:#99E2D0;
   align-items: center;
 }
 
-.column-center{
+.column-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,28 +44,28 @@ $turquoise:#99E2D0;
 }
 
 // ***** Section localisation *****
-.loca-section{
+.loca-section {
   padding: 20px 0;
-  background-color:rgba(232, 232, 232, 0.763);
+  background-color: rgba(232, 232, 232, 0.763);
   gap: 20px;
   box-shadow: 0px 5px 3px #000000;
 }
 
 // ***** Réservation *****
-.reserv-section{
+.reserv-section {
   padding: 40px 35px;
   text-align: center;
-  background-color: rgba(232, 232, 232, 0.918);
+  background-color: rgba(243, 243, 243, 0.946);
 
-  .reserv-title{
+  .reserv-title {
     margin-bottom: 15px;
   }
 
-  .reserv-subtitle{
+  .reserv-subtitle {
     margin-bottom: 30px;
   }
 
-  .btn-reserv{
+  .btn-reserv {
     padding: 15px 20px;
     background-image: linear-gradient(180deg, $pink, $purple);
     color: white;
@@ -78,18 +78,92 @@ $turquoise:#99E2D0;
 
 // ***** Fonctionnement *****
 
-.fonction-section{
-  margin: 20px 20px 0 20px;
+.fonction-section {
+  padding: 50px 20px;
 
-  .fonction-card-container{
+  .fonction-card-container {
     margin-top: 30px;
-    gap: 20px;
+    gap: 25px;
 
-    .fonction-card{
-      padding: 15px 20px;
+    .fonction-card {
+      width: 95%;
+      height: 70px;
       border-radius: 18px;
-      background-color: rgba(232, 232, 232, 0.763);
+      background-color: rgba(243, 243, 243, 0.946);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+    }
+
+    .align-center {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .fonction-number {
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      color: white;
+      font-size: 0.8em;
+      background-color: $purple;
+    }
+  }
+}
+
+// ***** Restaurants *****
+
+.restaurant-container {
+  padding: 50px 0;
+  background-color: rgba(243, 243, 243, 0.946);
+
+  .restaurant-title {
+    margin-bottom: 20px;
+  }
+}
+
+.restaurant-card {
+  position: relative;
+  width: 90%;
+  background-color: white;
+  border-radius: 18px;
+  overflow: hidden;
+
+  .new-icon {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .img-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-txt {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .card-title {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+
+    .card-subtitle {
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+
+    i {
+      font-size: 24px;
     }
   }
 }

@@ -44,7 +44,7 @@
 .reserv-section {
   padding: 40px 35px;
   text-align: center;
-  background-color: rgba(232, 232, 232, 0.918);
+  background-color: rgba(243, 243, 243, 0.946);
 }
 .reserv-section .reserv-title {
   margin-bottom: 15px;
@@ -54,7 +54,7 @@
 }
 .reserv-section .btn-reserv {
   padding: 15px 20px;
-  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
   color: white;
   border: none;
   border-radius: 50px;
@@ -63,17 +63,80 @@
 }
 
 .fonction-section {
-  margin: 20px 20px 0 20px;
+  padding: 50px 20px;
 }
 .fonction-section .fonction-card-container {
   margin-top: 30px;
-  gap: 20px;
+  gap: 25px;
 }
 .fonction-section .fonction-card-container .fonction-card {
-  padding: 15px 20px;
+  width: 95%;
+  height: 70px;
   border-radius: 18px;
-  background-color: rgba(232, 232, 232, 0.763);
+  background-color: rgba(243, 243, 243, 0.946);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+}
+.fonction-section .fonction-card-container .align-center {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.fonction-section .fonction-card-container .fonction-number {
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: white;
+  font-size: 0.8em;
+  background-color: #9356dc;
+}
+
+.restaurant-container {
+  padding: 50px 0;
+  background-color: rgba(243, 243, 243, 0.946);
+}
+.restaurant-container .restaurant-title {
+  margin-bottom: 20px;
+}
+
+.restaurant-card {
+  position: relative;
+  width: 90%;
+  background-color: white;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.restaurant-card .new-icon {
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.restaurant-card .img-card {
+  width: 100%;
+  height: auto;
+}
+.restaurant-card .card-txt {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant-card .card-txt .card-title {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+.restaurant-card .card-txt .card-subtitle {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+.restaurant-card .card-txt i {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
