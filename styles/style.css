@@ -62,4 +62,18 @@
   cursor: pointer;
 }
 
+.fonction-section {
+  margin: 20px 20px 0 20px;
+}
+.fonction-section .fonction-card-container {
+  margin-top: 30px;
+  gap: 20px;
+}
+.fonction-section .fonction-card-container .fonction-card {
+  padding: 15px 20px;
+  border-radius: 18px;
+  background-color: rgba(232, 232, 232, 0.763);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+}
+
 /*# sourceMappingURL=style.css.map */
