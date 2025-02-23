@@ -98,7 +98,7 @@ $grey: rgba(232, 232, 232, 0.763);
     align-items: center;
 
     .title {
-      font-size: 1.8em;
+      font-size: 2em;
     }
 
     i {
@@ -113,24 +113,62 @@ $grey: rgba(232, 232, 232, 0.763);
     }
   }
 
-  .entrees {
+  .menu-container {
     padding: 0 10px;
-  }
 
-  .menu-title {
-    width: 45px;
-    margin: 30px 0 10px 0;
-    font-size: 1.2em;
-    font-weight: lighter;
-    border-bottom: 4px solid $turquoise;
-  }
+    .menu-title {
+      width: 45px;
+      margin: 30px 0 15px 0;
+      font-size: 1.2em;
+      font-weight: lighter;
+      border-bottom: 4px solid $turquoise;
+    }
 
-  .plat {
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    border-radius: 18px;
-    overflow: hidden;
+    .card {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 6px rgba(196, 196, 196, 0.37);
+      overflow: hidden;
+      cursor: pointer;
+
+      .card-title {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      .card-price {
+        margin-top: auto;
+        align-self: flex-end;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+
+    .btn-command {
+      display: block;
+      margin: 50px auto 30px auto;
+      padding: 25px 60px;
+      background-image: linear-gradient(180deg, $pink, $purple);
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+      cursor: pointer;
+    }
+
+    .btn-command:hover {
+      background-image: linear-gradient(
+        180deg,
+        lighten($pink, 3%),
+        lighten($purple, 3%)
+      );
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.499);
+    }
   }
 }
 
@@ -164,5 +202,49 @@ $grey: rgba(232, 232, 232, 0.763);
   a:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+}
+
+// ***** RESPONSIVE *****
+@media screen and (min-width: 768px) {
+  // ***** Menu *****
+  .menu-section {
+    width: 80%;
+    margin: -55px 80px 0 80px;
+    padding: 25px 100px;
+
+    .restaurant-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      i {
+        position: static;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  // ***** Footer *****
+  .footer-container {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 60px;
+    font-size: 0.8em;
+
+    .footer-logo {
+      margin-bottom: 0;
+    }
+
+    .footer-txt {
+      gap: 5px;
+    }
+
+    .footer-links {
+      flex-direction: row;
+    }
   }
 }

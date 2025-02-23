@@ -83,7 +83,7 @@
   align-items: center;
 }
 .menu-section .restaurant-name .title {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 .menu-section .restaurant-name i {
   position: absolute;
@@ -94,22 +94,52 @@
 .menu-section .restaurant-name i:hover {
   color: #ff79da;
 }
-.menu-section .entrees {
+.menu-section .menu-container {
   padding: 0 10px;
 }
-.menu-section .menu-title {
+.menu-section .menu-container .menu-title {
   width: 45px;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 15px 0;
   font-size: 1.2em;
   font-weight: lighter;
   border-bottom: 4px solid #99e2d0;
 }
-.menu-section .plat {
+.menu-section .menu-container .card {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
   padding: 10px 20px;
   background-color: white;
   border-radius: 18px;
+  box-shadow: 0 4px 6px rgba(196, 196, 196, 0.37);
   overflow: hidden;
+  cursor: pointer;
+}
+.menu-section .menu-container .card .card-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.menu-section .menu-container .card .card-price {
+  margin-top: auto;
+  align-self: flex-end;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.menu-section .menu-container .btn-command {
+  display: block;
+  margin: 50px auto 30px auto;
+  padding: 25px 60px;
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.menu-section .menu-container .btn-command:hover {
+  background-image: linear-gradient(180deg, rgb(255, 136.3, 222.2246268657), rgb(155.1, 98.675, 222.625));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.499);
 }
 
 .footer-container {
@@ -139,4 +169,39 @@
   text-underline-offset: 3px;
 }
 
-/*# sourceMappingURL=menu1.css.map */
+@media screen and (min-width: 768px) {
+  .menu-section {
+    width: 80%;
+    margin: -55px 80px 0 80px;
+    padding: 25px 100px;
+  }
+  .menu-section .restaurant-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .menu-section .restaurant-name i {
+    position: static;
+    font-size: 1.5em;
+  }
+  .footer-container {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 60px;
+    font-size: 0.8em;
+  }
+  .footer-container .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer-container .footer-txt {
+    gap: 5px;
+  }
+  .footer-container .footer-links {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

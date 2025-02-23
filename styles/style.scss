@@ -50,7 +50,7 @@ $grey: rgba(232, 232, 232, 0.763);
   align-items: center;
   background-color: #000000;
   transition: opacity 1s ease-in-out;
-  animation: loader-fade 3s forwards;
+  animation: loader-fade 1.5s forwards;
 
   .dot {
     width: 50px;
@@ -86,6 +86,7 @@ $grey: rgba(232, 232, 232, 0.763);
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -112,6 +113,14 @@ $grey: rgba(232, 232, 232, 0.763);
   background-color: $grey;
   gap: 20px;
   box-shadow: 0px 5px 3px #000000;
+
+  .loca-title {
+    cursor: pointer;
+  }
+
+  .loca-title:hover {
+    text-decoration: underline;
+  }
 }
 
 // ***** Réservation *****
@@ -311,6 +320,7 @@ $grey: rgba(232, 232, 232, 0.763);
 @media screen and (min-width: 768px) {
   // ***** Fonctionnement *****
   .fonction-section {
+    padding: 50px 100px;
     .fonction-card-container {
       width: 90%;
       display: flex;
@@ -326,6 +336,7 @@ $grey: rgba(232, 232, 232, 0.763);
   // ***** Restaurants *****
 
   .restaurant-container {
+    padding: 50px 80px;
     .restaurant-cards {
       display: grid;
       grid-template-columns: repeat(2, 0fr);
