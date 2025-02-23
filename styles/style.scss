@@ -136,7 +136,8 @@ $turquoise: #99e2d0;
 
 .restaurant-card {
   position: relative;
-  width: 90%;
+  width: 90vw;
+  height: 250px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 18px;
@@ -153,7 +154,8 @@ $turquoise: #99e2d0;
 
   .img-card {
     width: 100%;
-    height: auto;
+    height: 170px;
+    object-fit: cover;
   }
 
   .card-txt {
