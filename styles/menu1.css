@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title-logo {
+  font-family: "Shrikhand", serif;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-weight: lighter;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.538);
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.header a .icon-arrow {
+  font-size: 1.2em;
+}
+.header #header-logo {
+  width: 160px;
+  height: auto;
+}
+
+.footer-container {
+  padding: 20px;
+  color: white;
+  background-color: #353535;
+}
+.footer-container .footer-logo {
+  margin-bottom: 20px;
+}
+.footer-container .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-container .footer-txt {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.footer-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-container a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/*# sourceMappingURL=menu1.css.map */
