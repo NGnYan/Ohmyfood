@@ -171,9 +171,13 @@
 
 @media screen and (min-width: 768px) {
   .menu-section {
+    width: 70%;
+    margin: -40px auto 0 auto;
+    padding: 25px auto;
+  }
+  .menu-section .menu-container {
     width: 80%;
-    margin: -55px 80px 0 80px;
-    padding: 25px 100px;
+    margin: 0 auto;
   }
   .menu-section .restaurant-name {
     display: flex;

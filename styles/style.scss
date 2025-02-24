@@ -320,9 +320,10 @@ $grey: rgba(232, 232, 232, 0.763);
 @media screen and (min-width: 768px) {
   // ***** Fonctionnement *****
   .fonction-section {
-    padding: 50px 100px;
+    width: 80%;
+    margin: 30px auto;
     .fonction-card-container {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -336,19 +337,24 @@ $grey: rgba(232, 232, 232, 0.763);
   // ***** Restaurants *****
 
   .restaurant-container {
-    padding: 50px 80px;
+    padding: 50px auto;
+    margin: 0 auto;
+
     .restaurant-cards {
       display: grid;
       grid-template-columns: repeat(2, 0fr);
       place-items: center;
-      gap: 60px;
+      gap: 40px;
     }
 
     .restaurant-card {
+      height: auto;
       width: 44vw;
 
-      height: 200px;
-      margin: 0;
+      min-width: 300px;
+
+      box-sizing: border-box;
+      overflow: hidden;
     }
 
     .img-card {
