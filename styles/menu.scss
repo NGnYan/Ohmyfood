@@ -138,7 +138,7 @@ $grey: rgba(232, 232, 232, 0.763);
       transition: transform 0.3s ease-out;
       opacity: 0;
     }
-    .card-container:hover .check-position {
+    .card:hover .check-position {
       transform: translateY(40%) translateX(-10px);
       opacity: 1;
     }

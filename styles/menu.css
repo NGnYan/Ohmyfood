@@ -117,7 +117,7 @@
   transition: transform 0.3s ease-out;
   opacity: 0;
 }
-.menu-section .menu-container .card-container:hover .check-position {
+.menu-section .menu-container .card:hover .check-position {
   transform: translateY(40%) translateX(-10px);
   opacity: 1;
 }
