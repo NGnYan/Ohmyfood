@@ -124,14 +124,16 @@
   border-radius: 18px;
   box-shadow: 0 4px 6px rgba(196, 196, 196, 0.37);
   overflow: hidden;
-  text-overflow: ellipsis;
   cursor: pointer;
 }
 .menu-section .menu-container .card .card-txt {
   padding: 10px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-section .menu-container .card .card-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 5px;
 }
 .menu-section .menu-container .card .card-price {
@@ -139,7 +141,7 @@
   margin-left: auto;
   padding: 10px 10px;
   align-self: flex-end;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 .menu-section .menu-container .card .check-position {
@@ -154,6 +156,7 @@
   background-color: #99e2d0;
   color: white;
   font-size: 24px;
+  animation: slideIn 0.3s ease-out forwards;
 }
 .menu-section .menu-container .btn-command {
   display: block;
@@ -172,6 +175,16 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.499);
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .menu-container:nth-child(2) {
   animation-delay: 0.6s;
 }
