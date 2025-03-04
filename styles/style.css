@@ -72,8 +72,8 @@
     opacity: 1;
   }
   100% {
+    display: none;
     opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes loader-dot {
@@ -284,20 +284,23 @@
     gap: 15px;
   }
   .restaurant-container {
-    padding: 50px auto;
-    margin: 0 auto;
+    width: 80%;
+    margin: 30px auto;
   }
   .restaurant-container .restaurant-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 0fr);
-    place-items: center;
-    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
   .restaurant-container .restaurant-card {
-    height: auto;
-    width: 44vw;
-    min-width: 300px;
-    box-sizing: border-box;
+    position: relative;
+    width: calc(50% - 20px);
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 18px;
     overflow: hidden;
   }
   .restaurant-container .img-card {
