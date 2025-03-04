@@ -207,10 +207,11 @@ $grey: rgba(232, 232, 232, 0.763);
 }
 
 // ***** Restaurants *****
-
+.restaurant-background {
+  background-color: rgba(243, 243, 243, 0.946);
+}
 .restaurant-container {
   padding: 50px 0;
-  background-color: rgba(243, 243, 243, 0.946);
 
   .restaurant-title {
     padding: 20px;
@@ -348,7 +349,7 @@ $grey: rgba(232, 232, 232, 0.763);
 
   .restaurant-container {
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
 
     .restaurant-cards {
       display: flex;
@@ -361,7 +362,7 @@ $grey: rgba(232, 232, 232, 0.763);
     .restaurant-card {
       position: relative;
       width: calc(50% - 20px);
-      height: 250px;
+      height: 220px;
       margin-bottom: 20px;
       background-color: white;
       border-radius: 18px;

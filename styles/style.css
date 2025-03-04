@@ -169,9 +169,12 @@
   color: #9356dc;
 }
 
+.restaurant-background {
+  background-color: rgba(243, 243, 243, 0.946);
+}
+
 .restaurant-container {
   padding: 50px 0;
-  background-color: rgba(243, 243, 243, 0.946);
 }
 .restaurant-container .restaurant-title {
   padding: 20px;
@@ -285,19 +288,19 @@
   }
   .restaurant-container {
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
   }
   .restaurant-container .restaurant-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   .restaurant-container .restaurant-card {
     position: relative;
     width: calc(50% - 20px);
-    height: 250px;
+    height: 220px;
     margin-bottom: 20px;
     background-color: white;
     border-radius: 18px;

@@ -17,6 +17,9 @@
 
 .subtitle {
   font-weight: lighter;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .align-center {
@@ -129,12 +132,15 @@
 .menu-section .menu-container .card .card-txt {
   padding: 10px 20px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-section .menu-container .card .card-title {
   font-size: 1.1em;
   margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-section .menu-container .card .card-price {
   margin-top: auto;
