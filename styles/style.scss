@@ -1,4 +1,7 @@
 // ***** General*****
+
+@use "sass:color";
+
 * {
   margin: 0;
   font-family: "Roboto", serif;
@@ -150,8 +153,8 @@ $grey: rgba(232, 232, 232, 0.763);
   .btn-reserv:hover {
     background-image: linear-gradient(
       180deg,
-      lighten($pink, 3%),
-      lighten($purple, 3%)
+      color.adjust($pink, $lightness: 3%),
+      color.adjust($purple, $lightness: 3%)
     );
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.499);
   }
